@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Placement Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Campus Placement Registration</h1>
+    <p class="subtitle">Fill in the details below to register for campus placements.</p>
+
+    <form>
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+
+        <label>Full Name *</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>University Roll No. *</label>
+        <input type="text" placeholder="e.g., 21CSE1234" required>
+
+        <label>Email *</label>
+        <input type="email" placeholder="name@example.com" required>
+
+        <label>Mobile Number *</label>
+        <input type="tel" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+        <label>Date of Birth *</label>
+        <input type="date" required>
+
+        <label>Gender *</label>
+        <select required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Address *</label>
+        <textarea placeholder="Enter complete address" required></textarea>
+
+        <!-- Academic Details -->
+        <h2>Academic Details</h2>
+
+        <label>Program *</label>
+        <select required>
+            <option value="">Select</option>
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Branch / Department *</label>
+        <input type="text" placeholder="e.g., CSE" required>
+
+        <label>Passing Year *</label>
+        <input type="number" placeholder="e.g., 2026" required>
+
+        <label>CGPA *</label>
+        <input type="text" placeholder="e.g., 8.25" required>
+
+        <label>Active Backlogs *</label>
+        <input type="number" placeholder="0" required>
+
+        <label>Class 10 (%)</label>
+        <input type="text" placeholder="e.g., 88.4">
+
+        <label>Class 12 / Diploma (%)</label>
+        <input type="text" placeholder="e.g., 84.2">
+
+        <!-- Skills -->
+        <h2>Skills & Placement Preferences</h2>
+
+        <label>Areas of Interest *</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Software Development</label>
+            <label><input type="checkbox"> Data Science</label>
+            <label><input type="checkbox"> AI / ML</label>
+            <label><input type="checkbox"> Cyber Security</label>
+            <label><input type="checkbox"> Cloud / DevOps</label>
+        </div>
+
+        <label>Preferred Job Location *</label>
+        <input type="text" placeholder="e.g., Bengaluru / Hyderabad / Any" required>
+
+        <label>Preferred Work Type *</label>
+        <select required>
+            <option value="">Select</option>
+            <option>Core</option>
+            <option>Non-IT</option>
+            <option>IT</option>
+        </select>
+
+        <label>Key Skills</label>
+        <input type="text" placeholder="Java, Python, SQL, React, AWS">
+
+        <label>LinkedIn Profile</label>
+        <input type="url" placeholder="https://www.linkedin.com/in/username">
+
+        <label>Resume (PDF) *</label>
+        <input type="file" accept=".pdf" required>
+
+        <!-- Declaration -->
+        <div class="declaration">
+            <label>
+                <input type="checkbox" required>
+                I declare that the information provided is true to the best of my knowledge and I agree to abide by the placement policy.
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button type="reset" class="reset">Reset</button>
+            <button type="submit" class="submit">Submit Registration</button>
+        </div>
+    </form>
+
+    <footer>
+        © Campus Placement Cell | For assistance, contact
+        <a href="mailto:placement@kiit.ac.in">placement@kiit.ac.in</a>
+    </footer>
+</div>
+
+</body>
+</html>
